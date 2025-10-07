@@ -1,0 +1,29 @@
+import sqlite3
+
+# Connect to SQLite database (Creates database.db if not exists)
+conn = sqlite3.connect('database.db')
+c = conn.cursor()
+
+# Create URL checks table (updated schema)
+c.execute('''
+    CREATE TABLE IF NOT EXISTS url_checks (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        url TEXT NOT NULL,
+        domain TEXT NOT NULL,
+        safety_score INTEGER CHECK(safety_score BETWEEN 0 AND 100),
+        threat_details TEXT,
+        whois_info TEXT,               -- WHOIS Data
+        virustotal_info TEXT,          -- VirusTotal Results
+        ip_geolocation_info TEXT,      -- IP Geolocation Results
+        ssl_info TEXT,                 -- SSL Certificate Information
+        ml_prediction TEXT,            -- ML Model Prediction
+        checked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+''')
+
+conn.commit()
+conn.close()
+print("✅ Database initialized successfully!")
+
+
+

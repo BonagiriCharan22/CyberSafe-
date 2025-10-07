@@ -1,0 +1,1728 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        };
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+        #urlChecker {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+        /* Flower Confetti Animation */
+        .flower {
+          position: fixed;
+          width: 10px;
+          height: 10px;
+          background: radial-gradient(circle, #ff69b4 0%, #ff1493 100%);
+          border-radius: 50%;
+          animation: fall 4s linear forwards;
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        .flower::before,
+        .flower::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: radial-gradient(circle, #ff69b4 0%, #ff1493 100%);
+          border-radius: 50%;
+        }
+
+        .flower::before {
+          transform: rotate(45deg);
+          top: -5px;
+          left: 0;
+        }
+
+        .flower::after {
+          transform: rotate(-45deg);
+          top: 0;
+          left: -5px;
+        }
+
+        @keyframes fall {
+          0% {
+            transform: translateY(-100vh) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+          }
+        }
+
+        .thank-you-message {
+          animation: fadeIn 0.5s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+      
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.1
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+              }
+              if (entry.entryType === 'first-input') {
+              }
+              if (entry.entryType === 'layout-shift') {
+              }
+            });
+          });
+
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+
+        // New script: Fetch URL history and handle URL submissions
+        document.addEventListener('DOMContentLoaded', function () {
+            fetchURLs();  // Fetch data when the page loads
+        });
+
+        function fetchURLs() {
+            fetch('http://127.0.0.1:5000/get-urls')
+                .then(response => response.json())
+                .then(data => {
+                    let urlList = document.getElementById('url-history');
+                    urlList.innerHTML = data.map(url =>
+                        `<li class="p-2 border-b">${url.url} - 
+                        <strong>Score:</strong> ${url.safety_score} 
+                        <span class="text-sm text-gray-500">(${url.checked_at})</span></li>`
+                    ).join('');
+
+                    if (data.length > 0) {
+                        document.getElementById('results').classList.remove('hidden');
+                    }
+                })
+                .catch(error => console.error('Error fetching URLs:', error));
+        }
+
+        function createConfetti() {
+          const container = document.body;
+          const flowerCount = 100; // Increased number of flowers
+          let flowersCreated = 0;
+          
+          // Create flowers in batches for a more continuous effect
+          const createFlowerBatch = () => {
+            for (let i = 0; i < 10; i++) {
+              if (flowersCreated >= flowerCount) return;
+              
+              const flower = document.createElement('div');
+              flower.className = 'flower';
+              
+              // Random position across the top of the screen
+              const startPosition = Math.random() * window.innerWidth;
+              flower.style.left = `${startPosition}px`;
+              
+              // Random delay for each flower
+              flower.style.animationDelay = `${Math.random() * 2}s`;
+              
+              container.appendChild(flower);
+              
+              // Remove flower after animation completes
+              setTimeout(() => {
+                flower.remove();
+              }, 4000);
+              
+              flowersCreated++;
+            }
+          };
+          
+          // Create initial batch
+          createFlowerBatch();
+          
+          // Continue creating flowers every 200ms for 4 seconds
+          const interval = setInterval(createFlowerBatch, 200);
+          
+          // Stop creating flowers after 4 seconds
+          setTimeout(() => {
+            clearInterval(interval);
+          }, 4000);
+        }
+
+        function submitURL() {
+    let inputUrl = document.getElementById('urlInput').value;
+    if (!inputUrl) {
+        alert("Please enter a valid URL.");
+        return;
+    }
+
+    fetch('http://127.0.0.1:5000/check-url', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: inputUrl })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("API Response:", data);
+        if (data.error) {
+            alert("Error: " + data.error);
+        } else {
+            document.getElementById('results').classList.remove('hidden');
+            
+            // Get color based on safety score
+            const getScoreColor = (score) => {
+                if (score >= 80) return 'bg-green-500';
+                if (score >= 50) return 'bg-yellow-500';
+                return 'bg-red-500';
+            };
+
+            // Format date
+            const formatDate = (dateString) => {
+                if (!dateString) return 'N/A';
+                return new Date(dateString).toLocaleDateString();
+            };
+
+            // Calculate progress bar width
+            const progressWidth = Math.min(Math.max(data.safety_score || 0, 0), 100);
+
+            // Ensure threat_details is an array
+            const threatDetails = Array.isArray(data.threat_details) ? data.threat_details : [];
+
+            // Check if there are any threats in the details
+            const hasThreats = threatDetails.some(detail => !detail.is_safe);
+
+            // Determine if we should show the report button
+            const shouldShowReportButton = 
+                data.safety_score < 70 || 
+                (data.ml_prediction && data.ml_prediction.is_malicious) || 
+                hasThreats;
+
+            document.getElementById('url-history').innerHTML = `
+                <div class="space-y-6">
+                    <!-- Safety Score Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">Safety Score</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span>${data.safety_score || 0}%</span>
+                                <span>${(data.safety_score || 0) >= 80 ? 'Safe' : (data.safety_score || 0) >= 50 ? 'Moderate' : 'Risky'}</span>
+                            </div>
+                            <div class="h-2 bg-neutral-700 rounded-full overflow-hidden">
+                                <div class="h-full ${getScoreColor(data.safety_score || 0)} transition-all duration-500" 
+                                     style="width: ${progressWidth}%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Threat Details Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">Threat Analysis</h4>
+                        <div class="space-y-3">
+                            ${threatDetails.map(detail => `
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">${detail.is_safe ? '✅' : '⚠️'}</span>
+                                    <span class="text-neutral-300">${detail.description || 'Unknown threat'}</span>
+                                </div>
+                            `).join('')}
+                            ${threatDetails.length === 0 ? '<p class="text-neutral-300">No threats detected</p>' : ''}
+                        </div>
+                    </div>
+
+                    <!-- WHOIS Info Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">Domain Information</h4>
+                        <div class="space-y-2 text-neutral-300">
+                            <div class="flex justify-between">
+                                <span>Domain Name:</span>
+                                <span>${data.whois_data?.domainName || 'N/A'}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Created Date:</span>
+                                <span>${formatDate(data.whois_data?.createdDate)}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Registrar:</span>
+                                <span>${data.whois_data?.registrarName || 'N/A'}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VirusTotal Report Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">VirusTotal Analysis</h4>
+                        <div class="space-y-4">
+                            ${Object.entries(data.virus_total_report || {}).map(([key, value]) => `
+                                <div class="space-y-1">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="capitalize">${key}:</span>
+                                        <span>${value || 0}</span>
+                                    </div>
+                                    <div class="h-2 bg-neutral-700 rounded-full overflow-hidden">
+                                        <div class="h-full bg-blue-500 transition-all duration-500" 
+                                             style="width: ${((value || 0) / 100) * 100}%"></div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                            ${Object.keys(data.virus_total_report || {}).length === 0 ? '<p class="text-neutral-300">No VirusTotal data available</p>' : ''}
+                        </div>
+                    </div>
+
+                    <!-- IP Geolocation Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">IP Geolocation</h4>
+                        <div class="space-y-2 text-neutral-300">
+                            <div class="flex justify-between">
+                                <span>Country:</span>
+                                <span>${data.ip_geo_location?.country || 'N/A'}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>ISP:</span>
+                                <span>${data.ip_geo_location?.isp || 'N/A'}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Organization:</span>
+                                <span>${data.ip_geo_location?.org || 'N/A'}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SSL Info Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">SSL Certificate</h4>
+                        <div class="space-y-2 text-neutral-300">
+                            <div class="flex justify-between">
+                                <span>Issuer:</span>
+                                <span>${data.ssl_info?.issuer || 'N/A'}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Subject:</span>
+                                <span>${data.ssl_info?.subject || 'N/A'}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Valid From:</span>
+                                <span>${formatDate(data.ssl_info?.validFrom)}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Valid Until:</span>
+                                <span>${formatDate(data.ssl_info?.validUntil)}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Days Until Expiry:</span>
+                                <span>${data.ssl_info?.daysUntilExpiry || 'N/A'}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ML Prediction Card -->
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4">AI Analysis</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-neutral-300">Prediction:</span>
+                                <span class="px-3 py-1 rounded-full ${data.ml_prediction?.is_malicious ? 'bg-red-500' : 'bg-green-500'}">
+                                    ${data.ml_prediction?.is_malicious ? 'Risky' : 'Safe'}
+                                </span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-neutral-300">Confidence:</span>
+                                <span>${data.ml_prediction?.confidence ? (data.ml_prediction.confidence * 100).toFixed(1) + '%' : 'N/A'}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visit Website Button -->
+                    ${data.safety_score >= 80 && (!data.ml_prediction || !data.ml_prediction.is_malicious) ? `
+                        <div class="mt-4 text-center">
+                            <a href="${inputUrl}" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors">
+                                Visit Website
+                            </a>
+                        </div>
+                    ` : ''}
+
+                    <!-- Report Button -->
+                    ${shouldShowReportButton ? `
+                        <div class="mt-4 text-center">
+                            <button id="reportButton" 
+                                    class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors">
+                                Report as Malicious
+                            </button>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+
+            // Add click handler for report button
+            const reportButton = document.getElementById('reportButton');
+            if (reportButton) {
+                reportButton.addEventListener('click', function() {
+                    this.parentElement.innerHTML = `
+                        <div class="text-center text-green-500 font-semibold thank-you-message">
+                            🎉 Thanks for your contribution in making the internet a safer place!
+                        </div>
+                    `;
+                    createConfetti();
+                });
+            }
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting URL:', error);
+        alert('An error occurred while checking the URL. Please try again.');
+    });
+}
+
+
+     </script>
+ 
+        
+        
+        
+        
+        
+      
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      
+        <!-- Content will be injected here -->
+         <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+    <!-- URL Checker Form (Insert Here) -->
+          
+       </main>
+
+      
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="bc3a06c1-3be0-4027-8d76-14640e7d2d88" data-section-id="bc3a06c1-3be0-4027-8d76-14640e7d2d88">
+
+<htmlCode>
+<div id="root">
+  <nav id="navbar" class="fixed-top w-full z-50 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <span class="text-xl font-bold">CyberSafe</span>
+          </div>
+        </div>
+        
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#hero" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">Home</a>
+            <a href="#features" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">Features</a>
+            <a href="#urlChecker" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">URL Checker</a>
+            <a href="#howItWorks" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">How It Works</a>
+            <a href="#security" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">Security</a>
+            <a href="#testimonials" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">Testimonials</a>
+            <a href="#faq" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">FAQ</a>
+            <a href="#contact" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium transition-all">Contact</a>
+          </div>
+        </div>
+
+        <div class="-mr-2 flex md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-neutral-700 focus:outline-none">
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#hero" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">Home</a>
+        <a href="#features" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">Features</a>
+        <a href="#urlChecker" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">URL Checker</a>
+        <a href="#howItWorks" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">How It Works</a>
+        <a href="#security" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">Security</a>
+        <a href="#testimonials" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">Testimonials</a>
+        <a href="#faq" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">FAQ</a>
+        <a href="#contact" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium transition-all">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const isHidden = mobileMenu.classList.contains('hidden');
+      const openIcon = this.querySelector('svg:first-child');
+      const closeIcon = this.querySelector('svg:last-child');
+
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        openIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        openIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+        document.querySelector('#mobile-menu-button svg:first-child').classList.remove('hidden');
+        document.querySelector('#mobile-menu-button svg:last-child').classList.add('hidden');
+      });
+    });
+  </script>
+</div>
+
+       <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative">
+         <!-- Hero Section -->
+         <section id="hero" class="relative bg-neutral-900 text-white min-h-[70vh] flex items-center overflow-hidden">
+            <!-- Animated Background -->
+            <div class="absolute inset-0">
+               <div class="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-purple-900/50"></div>
+               <div class="absolute inset-0" id="particles-js"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+               <div class="grid md:grid-cols-2 gap-8 items-center">
+                  <div class="animate__animated animate__fadeInLeft">
+                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Secure Your Online Journey with
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                           CyberSafe
+                        </span>
+                     </h1>
+                     <p class="text-lg md:text-xl text-gray-300 mb-8">
+                        Real-time phishing detection and URL verification to keep you safe from cyber threats.
+                     </p>
+                     <div class="flex flex-wrap gap-4">
+                        <a href="#urlChecker" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 animate__animated animate__pulse animate__infinite">
+                           Check URL Now
+                        </a>
+                        <a href="#features" class="px-8 py-3 bg-neutral-800 rounded-full font-semibold hover:bg-neutral-700 transition-all duration-300">
+                           Learn More
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="animate__animated animate__fadeInRight">
+                     <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg backdrop-blur-sm p-6 border border-gray-700">
+                           <div class="flex items-center gap-2 mb-4">
+                              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                           </div>
+                           <div class="space-y-4">
+                              <div class="h-8 bg-neutral-800 rounded animate-pulse"></div>
+                              <div class="h-8 bg-neutral-800 rounded animate-pulse"></div>
+                              <div class="h-32 bg-neutral-800 rounded animate-pulse"></div>
+                              <div class="flex gap-2">
+                                 <div class="h-8 w-24 bg-blue-500/30 rounded animate-pulse"></div>
+                                 <div class="h-8 w-24 bg-purple-500/30 rounded animate-pulse"></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-2xl opacity-30"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                  <a href="#features" class="text-white/50 hover:text-white transition-colors">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <!-- URL Checker Section -->
+         <section id="urlChecker" class="py-20 bg-neutral-900 text-white">
+            <div class="container mx-auto px-4">
+               <div class="text-center mb-16 animate__animated animate__fadeIn">
+                  <h2 class="text-4xl font-bold mb-4">Check URL Safety</h2>
+                  <p class="text-neutral-300 max-w-2xl mx-auto">Enter any URL to instantly check its safety and detect potential phishing threats</p>
+               </div>
+               <div class="max-w-3xl mx-auto">
+                  <div class="bg-neutral-800 p-8 rounded-2xl shadow-xl animate__animated animate__fadeInUp">
+                     <form id="urlCheckerForm" class="space-y-6" onsubmit="submitURL(); return false;">
+                        <div class="relative">
+                           <input type="url" id="urlInput" placeholder="Enter URL to check (e.g., https://example.com)" 
+                              class="w-full bg-neutral-700 border-2 border-neutral-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                              required>
+                           <button type="submit" 
+                              class="mt-4 w-full md:w-auto md:absolute md:right-2 md:top-1/2 md:-translate-y-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 animate__animated animate__pulse animate__infinite">
+                              Check Now
+                           </button>
+                        </div>
+                     </form>
+                     <div id="results" class="mt-8 hidden">
+                        <div class="border-t border-neutral-700 pt-6">
+                           <h3 class="text-xl font-semibold">Scan Results</h3>
+                           <ul id="url-history" class="space-y-2"></ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+          <div id="results" class="mt-8 hidden">
+            <div class="border-t border-neutral-700 pt-6">
+              <h3 class="text-xl font-semibold">Scan Results</h3>
+              <ul id="url-history" class="space-y-2"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Remove the second urlChecker section completely -->
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#ffffff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'repulse' },
+          onclick: { enable: true, mode: 'push' },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</div>
+</htmlCode></element><element id="0fbd5826-1236-4f5c-bc43-b7301bdc12c9" data-section-id="0fbd5826-1236-4f5c-bc43-b7301bdc12c9">
+
+<htmlCode>
+<div id="root">
+  <section id="features" class="py-20 bg-neutral-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Powerful Security Features</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto">Protect yourself against cyber threats with our comprehensive suite of security tools and features</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature Card 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp">
+          <div class="bg-blue-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Real-Time URL Verification</h3>
+          <p class="text-neutral-600">Instant analysis of URLs using advanced algorithms and threat detection APIs to ensure your safety.</p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+          <div class="bg-purple-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Secure Authentication</h3>
+          <p class="text-neutral-600">Robust user authentication system to protect your account and maintain data privacy.</p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+          <div class="bg-green-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Threat Reporting</h3>
+          <p class="text-neutral-600">Community-driven reporting system to identify and flag malicious URLs.</p>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+          <div class="bg-red-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">History Tracking</h3>
+          <p class="text-neutral-600">Comprehensive log of all URL checks and their results for future reference.</p>
+        </div>
+
+        <!-- Feature Card 5 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.8s">
+          <div class="bg-yellow-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Real-Time Analysis</h3>
+          <p class="text-neutral-600">Lightning-fast URL scanning with immediate threat assessment results.</p>
+        </div>
+
+        <!-- Feature Card 6 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 1s">
+          <div class="bg-indigo-500/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Intuitive Dashboard</h3>
+          <p class="text-neutral-600">User-friendly interface for easy URL checking and result visualization.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 mt-16">
+      <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white text-center animate__animated animate__fadeIn">
+        <h3 class="text-2xl font-bold mb-4">Ready to Secure Your Online Experience?</h3>
+        <p class="mb-6">Start checking URLs and protect yourself from phishing attacks today.</p>
+        <a href="#urlChecker" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
+          Get Started Now
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="4458419a-dc3b-4d68-9329-aba82da63644" data-section-id="4458419a-dc3b-4d68-9329-aba82da63644">
+
+<htmlCode>
+<div id="root">
+  
+    
+          
+
+
+        <div class="mt-8 grid md:grid-cols-3 gap-4 text-center">
+          <div class="bg-neutral-800 p-4 rounded-lg animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+            <div class="text-2xl font-bold text-blue-500 mb-2">100K+</div>
+            <div class="text-neutral-400">URLs Checked</div>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+            <div class="text-2xl font-bold text-purple-500 mb-2">99.9%</div>
+            <div class="text-neutral-400">Accuracy Rate</div>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+            <div class="text-2xl font-bold text-green-500 mb-2">24/7</div>
+            <div class="text-neutral-400">Protection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('urlCheckerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const url = document.getElementById('urlInput').value;
+      const results = document.getElementById('results');
+      const loadingState = document.getElementById('loadingState');
+      const resultContent = document.getElementById('resultContent');
+
+      results.classList.remove('hidden');
+      loadingState.classList.remove('hidden');
+      resultContent.classList.add('hidden');
+
+      // Simulate API call
+      setTimeout(() => {
+        loadingState.classList.add('hidden');
+        resultContent.classList.remove('hidden');
+        
+        // Simulate results
+        document.getElementById('safetyBar').style.width = '85%';
+        document.getElementById('domainInfo').textContent = 'Domain age: 5 years | Registered: Yes';
+        document.getElementById('threatInfo').textContent = 'No known threats detected';
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+      }, 2000);
+    });
+
+    // Add click handlers for report and share buttons
+    document.getElementById('reportBtn').addEventListener('click', () => alert('Report submitted successfully!'));
+    document.getElementById('shareBtn').addEventListener('click', () => alert('Results copied to clipboard!'));
+  </script>
+</div>
+</htmlCode></element><element id="1d4fe5a5-8d33-489a-86a4-0aaa94267651" data-section-id="1d4fe5a5-8d33-489a-86a4-0aaa94267651">
+
+<htmlCode>
+<div id="root">
+  <section id="howItWorks" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">How It Works</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto">Our three-step process ensures thorough URL analysis and protection against phishing threats</p>
+      </div>
+
+      <div class="relative">
+        <!-- Progress Line -->
+        <div class="hidden md:block absolute left-1/2 top-0 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-600 transform -translate-x-1/2 -z-10"></div>
+
+        <!-- Step 1 -->
+        <div class="flex flex-col md:flex-row items-center mb-16 animate__animated animate__fadeInLeft">
+          <div class="md:w-1/2 md:pr-12 text-right">
+            <div class="bg-neutral-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-blue-600">1. Input Processing</h3>
+              <p class="text-neutral-600">Enter any suspicious URL into our secure checking system. Our platform accepts both complete URLs and domain names for analysis.</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 pl-12 mt-8 md:mt-0">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse">
+              1
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col md:flex-row-reverse items-center mb-16 animate__animated animate__fadeInRight">
+          <div class="md:w-1/2 md:pl-12 text-left">
+            <div class="bg-neutral-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-purple-600">2. URL Analysis</h3>
+              <p class="text-neutral-600">Our advanced algorithms analyze the URL using multiple security databases and AI-powered threat detection systems in real-time.</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 pr-12 mt-8 md:mt-0">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse">
+              2
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col md:flex-row items-center animate__animated animate__fadeInLeft">
+          <div class="md:w-1/2 md:pr-12 text-right">
+            <div class="bg-neutral-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-green-600">3. Results Display</h3>
+              <p class="text-neutral-600">Receive comprehensive security analysis results, including threat levels, domain information, and recommended actions.</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 pl-12 mt-8 md:mt-0">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg animate-pulse">
+              3
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Features -->
+      <div class="mt-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white animate__animated animate__fadeIn">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h4 class="font-bold mb-2">Real-Time Results</h4>
+            <p class="text-white/80">Instant feedback on URL safety status</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h4 class="font-bold mb-2">Advanced Security</h4>
+            <p class="text-white/80">Multi-layered threat detection</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+              </svg>
+            </div>
+            <h4 class="font-bold mb-2">User Reports</h4>
+            <p class="text-white/80">Community-driven threat detection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="3eba889a-1326-4f4b-ae1d-c1c6142dafd8" data-section-id="3eba889a-1326-4f4b-ae1d-c1c6142dafd8">
+
+<htmlCode>
+<div id="root">
+  <section id="security" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute w-96 h-96 bg-blue-500 rounded-full blur-3xl -top-20 -left-20 animate-pulse"></div>
+      <div class="absolute w-96 h-96 bg-purple-500 rounded-full blur-3xl -bottom-20 -right-20 animate-pulse"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Enterprise-Grade Security</h2>
+        <p class="text-neutral-300 max-w-2xl mx-auto">Multi-layered protection system ensuring your safety across the digital landscape</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="space-y-8 animate__animated animate__fadeInLeft">
+          <div class="bg-neutral-800/50 p-6 rounded-xl backdrop-blur-sm border border-neutral-700 hover:border-blue-500/50 transition-all duration-300">
+            <div class="flex items-start">
+              <div class="bg-blue-500/10 p-3 rounded-lg">
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold mb-2">Secure Authentication</h3>
+                <p class="text-neutral-400">Multi-factor authentication and encrypted sessions for maximum account security</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-neutral-800/50 p-6 rounded-xl backdrop-blur-sm border border-neutral-700 hover:border-purple-500/50 transition-all duration-300">
+            <div class="flex items-start">
+              <div class="bg-purple-500/10 p-3 rounded-lg">
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold mb-2">Real-time Monitoring</h3>
+                <p class="text-neutral-400">24/7 surveillance of URL threats and instant notification system</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-neutral-800/50 p-6 rounded-xl backdrop-blur-sm border border-neutral-700 hover:border-green-500/50 transition-all duration-300">
+            <div class="flex items-start">
+              <div class="bg-green-500/10 p-3 rounded-lg">
+                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-semibold mb-2">Encrypted Database</h3>
+                <p class="text-neutral-400">Advanced encryption for all stored data and user information</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative animate__animated animate__fadeInRight">
+          <div class="bg-neutral-800/50 p-8 rounded-2xl backdrop-blur-sm border border-neutral-700">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-medium">System Security Level</span>
+                <span class="text-green-500">99.9%</span>
+              </div>
+              <div class="h-2 bg-neutral-700 rounded-full">
+                <div class="h-full w-[99.9%] bg-gradient-to-r from-blue-500 to-green-500 rounded-full animate-pulse"></div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="text-center p-4 bg-neutral-800 rounded-lg">
+                  <div class="text-2xl font-bold text-blue-500 mb-2">100K+</div>
+                  <div class="text-sm text-neutral-400">Threats Blocked</div>
+                </div>
+                <div class="text-center p-4 bg-neutral-800 rounded-lg">
+                  <div class="text-2xl font-bold text-purple-500 mb-2">24/7</div>
+                  <div class="text-sm text-neutral-400">Monitoring</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating security badges -->
+          <div class="absolute -top-4 -right-4 bg-green-500 text-white p-2 rounded-full animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center animate__animated animate__fadeIn">
+        <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
+          Start Secure Browsing Now
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="b2481143-54ed-470e-b779-af834ae1e97c" data-section-id="b2481143-54ed-470e-b779-af834ae1e97c">
+
+<htmlCode>
+<div id="root">
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">What Our Users Say</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto">Trusted by security professionals and everyday users worldwide</p>
+      </div>
+
+      <div class="testimonial-carousel relative max-w-6xl mx-auto">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg">
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                    JD
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                  <p class="text-sm text-neutral-500 mb-4">Security Analyst</p>
+                  <div class="flex text-yellow-400 mb-4">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                  </div>
+                  <p class="text-neutral-600">"An essential tool for our organization's cybersecurity toolkit. The real-time detection has saved us from numerous potential threats."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg">
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                    JS
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+                  <p class="text-sm text-neutral-500 mb-4">IT Manager</p>
+                  <div class="flex text-yellow-400 mb-4">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                  </div>
+                  <p class="text-neutral-600">"The user interface is incredibly intuitive, and the reporting system helps us maintain a secure environment for all users."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg">
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">
+                    RB
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">Robert Brown</h3>
+                  <p class="text-sm text-neutral-500 mb-4">Cybersecurity Expert</p>
+                  <div class="flex text-yellow-400 mb-4">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                  </div>
+                  <p class="text-neutral-600">"The comprehensive security features and real-time detection make this tool indispensable for modern web security."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-all">
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </div>
+          <div class="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-all">
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }
+      });
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="e078cae6-2fa5-4eed-8ae2-256ed82ae68f" data-section-id="e078cae6-2fa5-4eed-8ae2-256ed82ae68f">
+
+<htmlCode>
+<div id="root">
+  <section id="faq" class="py-20 bg-neutral-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto">Got questions? We've got answers. If you don't see what you're looking for, feel free to contact us.</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item bg-white rounded-xl shadow-md animate__animated animate__fadeInUp">
+          <button class="faq-button w-full flex items-center justify-between p-6 text-left focus:outline-none">
+            <span class="text-lg font-semibold">How does the URL checking process work?</span>
+            <svg class="w-6 h-6 text-blue-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-neutral-600">
+            Our system analyzes URLs through multiple security databases and real-time threat detection APIs. We check for phishing patterns, malware, and other security risks to provide comprehensive results within seconds.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item bg-white rounded-xl shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+          <button class="faq-button w-full flex items-center justify-between p-6 text-left focus:outline-none">
+            <span class="text-lg font-semibold">Is my data secure when using the service?</span>
+            <svg class="w-6 h-6 text-blue-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-neutral-600">
+            Yes, we implement enterprise-grade security measures including encrypted connections, secure data storage, and strict privacy policies to protect all user data and URL submissions.
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item bg-white rounded-xl shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+          <button class="faq-button w-full flex items-center justify-between p-6 text-left focus:outline-none">
+            <span class="text-lg font-semibold">Can I report suspicious URLs I encounter?</span>
+            <svg class="w-6 h-6 text-blue-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-neutral-600">
+            Yes, our platform includes a reporting mechanism where users can submit suspicious URLs. These reports are analyzed by our security team and added to our database if confirmed as threats.
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item bg-white rounded-xl shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+          <button class="faq-button w-full flex items-center justify-between p-6 text-left focus:outline-none">
+            <span class="text-lg font-semibold">How often is the security database updated?</span>
+            <svg class="w-6 h-6 text-blue-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-neutral-600">
+            Our security database is updated in real-time with continuous monitoring and integration of new threat data from multiple sources and user reports.
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item bg-white rounded-xl shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+          <button class="faq-button w-full flex items-center justify-between p-6 text-left focus:outline-none">
+            <span class="text-lg font-semibold">Do I need to create an account to use the service?</span>
+            <svg class="w-6 h-6 text-blue-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-neutral-600">
+            Basic URL checking is available without an account, but creating one gives you access to additional features like history tracking and custom alerts.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll('.faq-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const faqItem = button.parentElement;
+          const answer = button.nextElementSibling;
+          const arrow = button.querySelector('svg');
+          
+          // Close all other answers
+          document.querySelectorAll('.faq-answer').forEach(item => {
+            if (item !== answer) {
+              item.classList.add('hidden');
+              item.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+            }
+          });
+
+          // Toggle current answer
+          answer.classList.toggle('hidden');
+          arrow.classList.toggle('rotate-180');
+
+          // Add animation
+          if (!answer.classList.contains('hidden')) {
+            answer.style.animation = 'slideDown 0.3s ease-out';
+          }
+        });
+      });
+    </script>
+
+    <style>
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </section>
+</div>
+</htmlCode></element><element id="3b2cc86b-be64-4c84-be14-7a41abab1b61" data-section-id="3b2cc86b-be64-4c84-be14-7a41abab1b61">
+
+<htmlCode>
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-900 text-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+        <p class="text-neutral-300 max-w-2xl mx-auto">Have questions or concerns? We're here to help. Contact our security team for support.</p>
+      </div>
+
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-neutral-800 p-8 rounded-2xl animate__animated animate__fadeInLeft">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium mb-2" for="name">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-3 bg-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" placeholder="Your name" required>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-2" for="email">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-3 bg-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" placeholder="your@email.com" required>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-2" for="subject">Subject</label>
+              <select id="subject" class="w-full px-4 py-3 bg-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="report">Report a Threat</option>
+                <option value="business">Business Partnership</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-2" for="message">Message</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-3 bg-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" placeholder="Your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 animate__animated animate__pulse animate__infinite">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-8 animate__animated animate__fadeInRight">
+          <div class="bg-neutral-800 p-6 rounded-xl">
+            <div class="flex items-center space-x-4">
+              <div class="bg-blue-500/10 p-3 rounded-lg">
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-1">Email Us</h3>
+                <p class="text-neutral-300">support@cybersafe.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-neutral-800 p-6 rounded-xl">
+            <div class="flex items-center space-x-4">
+              <div class="bg-purple-500/10 p-3 rounded-lg">
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-1">Report a Threat</h3>
+                <p class="text-neutral-300">24/7 Threat Reporting Hotline</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-neutral-800 p-6 rounded-xl">
+            <div class="flex items-center space-x-4">
+              <div class="bg-green-500/10 p-3 rounded-lg">
+                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-1">Live Chat</h3>
+                <p class="text-neutral-300">Available during business hours</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 rounded-xl text-center">
+            <h3 class="text-xl font-bold mb-2">Emergency Support</h3>
+            <p class="text-white/90 mb-4">Detected a critical security threat?</p>
+            <button class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+              Contact Emergency Team
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+      });
+    </script>
+  </section>
+</div>
+</htmlCode></element><element id="32b352ac-ecc1-4f60-aa14-d98be9c87e62" data-section-id="32b352ac-ecc1-4f60-aa14-d98be9c87e62">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white pt-20 pb-10">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 pb-10 border-b border-neutral-700">
+        <!-- Company Info -->
+        <div class="animate__animated animate__fadeIn">
+          <h3 class="text-2xl font-bold mb-6">CyberSafe</h3>
+          <p class="text-neutral-400 mb-6">Protecting users from phishing attacks with real-time URL verification and advanced security features.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+          <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+          <ul class="space-y-4 text-neutral-400">
+            <li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+            <li><a href="#urlChecker" class="hover:text-white transition-colors">URL Checker</a></li>
+            <li><a href="#security" class="hover:text-white transition-colors">Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="animate__animated animate__fadeIn" style="animation-delay: 0.4s">
+          <h4 class="text-lg font-semibold mb-6">Support</h4>
+          <ul class="space-y-4 text-neutral-400">
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="animate__animated animate__fadeIn" style="animation-delay: 0.6s">
+          <h4 class="text-lg font-semibold mb-6">Stay Updated</h4>
+          <p class="text-neutral-400 mb-4">Subscribe to our newsletter for security updates and tips.</p>
+          <form class="space-y-4">
+            <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 text-center text-neutral-400">
+        <p class="animate__animated animate__fadeIn" style="animation-delay: 0.8s">
+          © 2024 CyberSafe. All rights reserved. Made with ❤️ for a safer internet.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+              console.log('Page complete');
+           </script>
+            </body>
+            </html
