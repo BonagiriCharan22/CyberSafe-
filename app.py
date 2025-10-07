@@ -19,10 +19,10 @@ app = Flask(__name__)
 CORS(app)
 
 # 🔥 Hardcoded API Keys (For testing; replace with env variables for production)
-SAFE_BROWSING_API_KEY = "AIzaSyD2TkYinnZFanrTKMwo9Yvk_iFLzi7inUk"
-WHOIS_API_KEY = "at_OU4T3jXMcl5ePUJJI6U4ieH75oo9v"
-VIRUSTOTAL_API_KEY = "e6a33725ff6cc7f78d75e56f7c7d5096cc45d407e35ec666eab38a7eacd70082"
-IP_GEOLOCATION_API_KEY = "772e7be60c9e4112bd3ac22cb2e74a72"
+SAFE_BROWSING_API_KEY = ""
+WHOIS_API_KEY = ""
+VIRUSTOTAL_API_KEY = ""
+IP_GEOLOCATION_API_KEY = ""
 
 # Function to connect to SQLite database
 def get_db_connection():
@@ -324,3 +324,4 @@ def check_url():
     }), 201
 if __name__ == '__main__':
     app.run(debug=True)
+
